@@ -1,0 +1,19 @@
+p {
+  font-size: 60px;
+  font-family: monospace;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
