@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
+    <h1>Tabel med filter</h1>
     <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Fuel</th>
+          <th>Passengers</th>
+          <th>Stops</th>
+          <th>Owned By</th>
+          <th>Electric</th>
+          <th>Tandem</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Fuel</th>
-                <th>Passengers</th>
-                <th>Stops</th>
-                <th>Owned By</th>
-                <th>Electric</th>
-                <th>Tandem</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-
-
-</body>
-
+    <div class="filterContainer">
+      <button id="filtrerMinSeats">Filtrer min to sæder</button>
+      <button id="filtrerJonas">Filtrer Jonas fartøjer</button>
+      <button id="filtrerElDrevne">Filtrer El Drevne</button>
+      <button id="filtrerRugbrødMereEnd1">Filtrer Rugbrød min. 1 Sæde</button>
+      <button id="showAll">Show All</button>
+    </div>
+  </body>
 </html>
