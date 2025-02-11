@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(255, 238, 241);
+  color: rgb(115, 8, 8);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#filterBTN {
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(115, 8, 8);
+  background-color: pink;
+  padding: 8px;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+
+button:hover {
+  background-color: rgb(255, 178, 191);
+}
+
+.yellow-background {
+  background-color: rgb(255, 227, 171);
+}
+
+dialog {
+  border: solid rgb(115, 8, 8);
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: rgb(115, 8, 8);
+}
+
+#closeDialog {
+  background-color: pink;
+  border: none;
+  color: rgb(115, 8, 8);
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-top: 8px;
+}
+
+#closeDialog:hover {
+  background-color: rgb(255, 178, 191);
+}
+
+[data-filter="]

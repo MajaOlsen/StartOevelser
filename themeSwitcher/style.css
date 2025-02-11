@@ -1,0 +1,93 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+  background-color: rgb(231, 231, 231);
+  border: none;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+* {
+  font-family: monospace;
+}
+
+* h1 {
+  font-size: 60px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 5px;
+}
+
+body[data-filter="lightFilter"] {
+  background-color: white;
+  color: black;
+}
+
+header[data-filter="lightFilter"] {
+  border: solid black 3px;
+  color: black;
+  padding: 1em;
+}
+
+footer[data-filter="lightFilter"] {
+  border: solid black 3px;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body[data-filter="hawaiiFilter"] {
+  background-color: rgb(253, 196, 115);
+  color: rgb(188, 255, 232);
+}
+
+header[data-filter="hawaiiFilter"] {
+  background-color: rgb(22, 172, 202);
+  color: rgb(188, 255, 232);
+  padding: 1em;
+}
+
+footer[data-filter="hawaiiFilter"] {
+  background-color: rgb(22, 172, 202);
+  color: rgb(188, 255, 232);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body[data-filter="darkFilter"] {
+  color: black;
+  background-color: grey;
+}
+
+header[data-filter="darkFilter"] {
+  background-color: rgb(78, 78, 78);
+  color: white;
+  padding: 1em;
+}
+
+footer[data-filter="darkFilter"] {
+  background-color: rgb(78, 78, 78);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,38 @@
+header {
+  background-color: rgb(87, 116, 188);
+  font-size: 40px;
+  padding: 1em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: rgb(234, 246, 255);
+  color: rgb(6, 6, 57);
+  font-family: monospace;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+select {
+  background-color: white;
+  border: none;
+  padding: 6px 15px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.footer {
+  background-color: rgb(87, 116, 188);
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
