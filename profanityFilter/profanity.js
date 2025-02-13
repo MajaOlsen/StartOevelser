@@ -11,30 +11,48 @@
 4. Brug evt. CSS til at tildele en gul baggrund til de "gode" ord.
 
 */
-const curseWords = [
-  { bad: "var", good: "const" },
-  { bad: "float", good: "grid" },
-  { bad: "marquee", good: "just don't" },
-];
 
-// console.log("SCRIPT LOADED");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM is fully loaded");
 
-document.querySelector("#filterBTN").addEventListener("click", filterWords);
+  const curseWords = [
+    { bad: "var", good: "const" },
+    { bad: "float", good: "grid" },
+    { bad: "marquee", good: "just don't" },
+  ];
 
-function filterWords() {
-  console.log("FILTER BAD WORDS");
-  console.log(curseWords);
-  dialogBox.showModal();
-}
+  const textContent = document.querySelector("#textContent");
+  const filterBTN = document.querySelector("#filterBTN");
+  const dialogBox = document.querySelector("#dialogBox");
+  const dialogBoxClose = document.querySelector("#closeDialog");
 
-// document.querySelector("#closeDialog").addEventListener("click", closeDialogBox);
+  let isUpdated = false; // Flag for tracking if words have been changed
 
-// function closeDialogBox() {
-//   dialogBox.close();
-//   console.log("LUK");
-// }
+  filterBTN.addEventListener("click", () => {
+    if (!isUpdated) {
+      let modifiedText = textContent.innerHTML;
 
-//skal have if-statement som gør er cursewords = bad skal bad skiftes til good fra array.
+      // Gennemgå alle curseWords med forEach og erstat alle de dårlige ord
+      curseWords.forEach(({ bad, good }) => {
+        const regex = new RegExp(`\\b${bad}\\b`, "g");
+        if (modifiedText.match(regex)) {
+          modifiedText = modifiedText.replace(regex, `<span data-filter="good-word">${good}</span>`);
+          isUpdated = true; // Vi har lavet en ændring
+        }
+      });
+
+      if (isUpdated) {
+        textContent.innerHTML = modifiedText;
+      }
+    } else {
+      dialogBox.showModal();
+    }
+  });
+
+  dialogBoxClose.addEventListener("click", () => dialogBox.close());
+});
+
+//skal have if-statement som gør er cursewords = bad skal bad skiftes til good fra array. med false og true (flag) kan vi fortælle en if-statement at hvis ordeneerskifter=true så skal den åbne dialog box. men hvis ordeneerskiftet=false skal den skifte dem.
 //til if-statement. Hvis der ikke er dårlige ord tilbage skal den vise dialog box som også kan lukkes efter.
 // dialogBox.showModal();
 

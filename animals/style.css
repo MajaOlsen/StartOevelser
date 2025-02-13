@@ -1,0 +1,37 @@
+Table styling #list {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+#list th,
+#list td {
+  padding: 6px 10px;
+  text-align: left;
+}
+
+#list th {
+  background-color: #dfe6e9;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#list tbody tr:nth-child(even) {
+  background-color: #c6e4fa;
+}
+
+button.filter {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: none;
+  background-color: #90caf9;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 10px;
+}
+
+button.filter:hover {
+  background-color: #64b5f6;
+}

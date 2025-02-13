@@ -1,0 +1,19 @@
+body {
+  color: rgb(6, 6, 32);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(330, 50%, 50%);
+  transition: background-color 0.1s;
+}
+/*I stedet for setProperty hvor jeg beder den set background color i js. så gør jeg det i css.*/
+
+h1 {
+  font-family: monospace;
+  font-size: 40px;
+  -webkit-text-stroke: 2px rgb(19, 19, 84);
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
