@@ -94,9 +94,10 @@ function sortList(sortBy) {
   if (sortBy === "name") {
     sortedList = sortedList.sort(sortByName);
   } else if (sortBy === "type") {
-    sortedList = sortedList.sort(sortByType);
+    sortedList = sortedList.sort(sortByName);
   }
   function sortByName(animalA, animalB) {
+    console.log(`sortBy is ${sortBy}`);
     if (animalA.name < animalB.name) {
       return -1;
     } else {

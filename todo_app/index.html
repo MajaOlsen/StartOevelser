@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div><h1>To Do</h1></div>
+      <div>
+        <select id="dropDownThemes">
+          <option value="light" id="lightSelect" data-filter="lightFilter">Light</option>
+          <option value="dark" id="darkSelect" data-filter="darkFilter">Dark</option>
+          <option value="pink" id="pinkSelect" data-filter="pinkFilter">Pink</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="make-task_container">
+        <h2>Add task</h2>
+        <form id="taskForm">
+          <input type="text" id="taskDescription" placeholder="Hvad skal der gøres?" required />
+          <input type="date" id="taskTime" />
+          <select id="taskCategory">
+            <option value="" disabled selected hidden>Choose a category</option>
+            <option value="Indkøb">Indkøb</option>
+            <option value="Arbejdsopgaver">Arbejdsopgaver</option>
+            <option value="Hjemmeopgaver">Hjemmeopgaver</option>
+            <option value="Studieopgaver">Studieopgaver</option>
+            <option value="Andet">Andet</option>
+          </select>
+          <button type="submit">Add task</button>
+        </form>
+      </div>
+
+      <div class="active-task_container">
+        <h2>Active tasks</h2>
+
+        <div class="task_container"></div>
+      </div>
+
+      <div class="done-task_container">
+        <h2>Done tasks</h2>
+
+        <button id="cleanUp">Delete done tasks!</button>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js.js"></script>
+  </body>
+</html>

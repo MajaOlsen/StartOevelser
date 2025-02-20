@@ -1,0 +1,374 @@
+/*LIGHT FILTERS*/
+body[data-filter="lightFilter"] {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header[data-filter="lightFilter"] {
+  color: rgb(25, 41, 65);
+  background-color: rgb(201, 216, 230);
+  padding: 1em;
+}
+
+footer[data-filter="lightFilter"] {
+  color: rgb(25, 41, 65);
+  background-color: rgb(201, 216, 230);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.make-task_container[data-filter="lightFilter"] {
+  background-color: rgb(225, 237, 255);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.active-task_container[data-filter="lightFilter"] {
+  background-color: rgb(204, 204, 255);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.done-task_container[data-filter="lightFilter"] {
+  background-color: rgb(255, 214, 170);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.shopping-list_container[data-filter="lightFilter"] {
+  background-color: rgb(220, 239, 208);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+select[data-filter="lightFilter"] {
+  background-color: rgb(220, 232, 244);
+}
+
+/*DARK FILTERS*/
+body[data-filter="darkFilter"] {
+  background-color: rgb(108, 120, 134);
+  color: rgb(226, 228, 242);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header[data-filter="darkFilter"] {
+  color: rgb(163, 177, 195);
+  background-color: rgb(26, 36, 46);
+  padding: 1em;
+}
+
+footer[data-filter="darkFilter"] {
+  color: rgb(116, 129, 147);
+  background-color: rgb(26, 36, 46);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.make-task_container[data-filter="darkFilter"] {
+  background-color: rgb(26, 36, 46);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.active-task_container[data-filter="darkFilter"] {
+  background-color: rgb(26, 36, 46);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.done-task_container[data-filter="darkFilter"] {
+  background-color: rgb(26, 36, 46);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+select[data-filter="darkFilter"] {
+  background-color: rgb(68, 83, 97);
+  color: white;
+}
+
+.shopping-list_container[data-filter="darkFilter"] {
+  background-color: rgb(68, 83, 97);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/*PINK FILTERS*/
+
+body[data-filter="pinkFilter"] {
+  background-color: rgb(254, 241, 243);
+  color: rgb(50, 33, 36);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header[data-filter="pinkFilter"] {
+  color: rgb(101, 19, 43);
+  background-color: rgb(248, 179, 199);
+  padding: 1em;
+}
+
+footer[data-filter="pinkFilter"] {
+  color: rgb(101, 19, 43);
+  background-color: rgb(248, 179, 199);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.make-task_container[data-filter="pinkFilter"] {
+  background-color: rgb(248, 165, 184);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.active-task_container[data-filter="pinkFilter"] {
+  background-color: rgb(254, 190, 205);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.done-task_container[data-filter="pinkFilter"] {
+  background-color: rgb(255, 208, 219);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+select[data-filter="pinkFilter"] {
+  background-color: rgb(244, 220, 227);
+}
+
+.shopping-list_container[data-filter="pinkFilter"] {
+  background-color: rgb(253, 218, 226);
+  padding: 1em;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/*ALMEN STYLING*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*TASK STYLING*/
+
+.make-task_container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 0 auto;
+}
+
+.active-task_container {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.done-task_container {
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.make-task_container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#taskDescription:focus {
+  border-color: #5c9ded;
+  outline: none;
+}
+
+.task p {
+  margin: 0;
+  color: black;
+  background-color: white;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: monospace;
+}
+
+.task-date {
+  color: gray;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.task_container {
+  display: flex;
+  flex-direction: row;
+}
+
+#taskDescription {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: monospace;
+}
+
+#taskTime {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(63, 63, 63);
+  font-family: monospace;
+}
+
+#taskCategory {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  font-family: monospace;
+}
+
+#taskForm button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: monospace;
+}
+
+#taskForm button:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*DONE TASKS DIV STYLING*/
+
+#cleanUp {
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-family: monospace;
+}
+
+#cleanUp:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 5px;
+  width: 100%;
+}
+
+.checkTask {
+  display: flex;
+  align-items: center;
+}
+
+/*ANIMATION MED DELAY NÅR TASK BLIVER RYKKET FRA ACTIVE TIL DONE TAKS*/
+.task {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.fadeOutAnimation {
+  opacity: 0;
+  transform: translateX(-50px); 
+
+.done-task_container .task {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.moveTaskAnimation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkTask {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.checkTask:checked {
+  background-color: rgb(172, 172, 172);
+}
