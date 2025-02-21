@@ -339,7 +339,8 @@ main {
 
 .fadeOutAnimation {
   opacity: 0;
-  transform: translateX(-50px); 
+  transform: translateX(-50px);
+}
 
 .done-task_container .task {
   opacity: 1;
